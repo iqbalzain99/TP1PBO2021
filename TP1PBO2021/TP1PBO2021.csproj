@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +97,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Home-01_1976053.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_logout_account_exit_door_3005766.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_logo_brand_brands_logos_sketch_app_2993662.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

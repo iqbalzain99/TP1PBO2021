@@ -21,5 +21,22 @@ namespace TP1PBO2021
         {
 
         }
+
+        private void loginBt_Click(object sender, EventArgs e)
+        {
+            
+            if (String.Equals(Convert.ToString(passwordTb.Text), "pbo123") && Convert.ToString(usernameTb.Text) != "")
+            {
+                MenuUtama Menut = new MenuUtama();
+                Menut.Show();
+                //this.Hide();
+                
+            }
+            else
+            {
+                MessageBox.Show("Username Yang anda masukkan tidak tepat atau username salah!");
+            }
+            
+        }
     }
 }
