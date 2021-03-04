@@ -57,6 +57,7 @@ namespace TP1PBO2021
             // 
             this.passwordTb.Location = new System.Drawing.Point(115, 206);
             this.passwordTb.Name = "passwordTb";
+            this.passwordTb.PasswordChar = '*';
             this.passwordTb.Size = new System.Drawing.Size(100, 22);
             this.passwordTb.TabIndex = 2;
             // 

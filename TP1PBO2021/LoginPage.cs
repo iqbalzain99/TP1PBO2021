@@ -28,9 +28,12 @@ namespace TP1PBO2021
             if (String.Equals(Convert.ToString(passwordTb.Text), "pbo123") && Convert.ToString(usernameTb.Text) != "")
             {
                 MenuUtama Menut = new MenuUtama();
-                Menut.Show();
-                //this.Hide();
-                
+                this.Hide();
+                Menut.ShowDialog();
+                passwordTb.ResetText();
+                usernameTb.ResetText();
+                this.Show();
+
             }
             else
             {

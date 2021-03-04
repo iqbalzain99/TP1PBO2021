@@ -36,13 +36,14 @@ namespace TP1PBO2021
             this.BtnCari = new System.Windows.Forms.Button();
             this.panelPencarian = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.Label();
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.LogOutBtn = new System.Windows.Forms.Button();
             this.WebCatalogBt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Logo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
+            this.panelBarang = new System.Windows.Forms.FlowLayoutPanel();
             this.panelPencarian.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelHeader.SuspendLayout();
@@ -120,7 +121,7 @@ namespace TP1PBO2021
             this.panelPencarian.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPencarian.Location = new System.Drawing.Point(0, 0);
             this.panelPencarian.Name = "panelPencarian";
-            this.panelPencarian.Size = new System.Drawing.Size(150, 450);
+            this.panelPencarian.Size = new System.Drawing.Size(150, 493);
             this.panelPencarian.TabIndex = 9;
             this.panelPencarian.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -134,6 +135,21 @@ namespace TP1PBO2021
             this.panelLogo.Size = new System.Drawing.Size(150, 70);
             this.panelLogo.TabIndex = 10;
             // 
+            // Logo
+            // 
+            this.Logo.AutoSize = true;
+            this.Logo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Logo.Image = global::TP1PBO2021.Properties.Resources.iconfinder_logo_brand_brands_logos_sketch_app_2993662;
+            this.Logo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Logo.Location = new System.Drawing.Point(24, 20);
+            this.Logo.Name = "Logo";
+            this.Logo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Logo.Size = new System.Drawing.Size(99, 25);
+            this.Logo.TabIndex = 15;
+            this.Logo.Text = "    RM D";
+            this.Logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
@@ -145,19 +161,8 @@ namespace TP1PBO2021
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(150, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(685, 70);
+            this.panelHeader.Size = new System.Drawing.Size(717, 70);
             this.panelHeader.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(156, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 18);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Semua Barang :";
             // 
             // LogOutBtn
             // 
@@ -212,38 +217,43 @@ namespace TP1PBO2021
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // Logo
+            // label1
             // 
-            this.Logo.AutoSize = true;
-            this.Logo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Logo.Image = global::TP1PBO2021.Properties.Resources.iconfinder_logo_brand_brands_logos_sketch_app_2993662;
-            this.Logo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Logo.Location = new System.Drawing.Point(22, 26);
-            this.Logo.Name = "Logo";
-            this.Logo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Logo.Size = new System.Drawing.Size(99, 25);
-            this.Logo.TabIndex = 15;
-            this.Logo.Text = "    RM D";
-            this.Logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(156, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 18);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Semua Barang :";
             // 
             // status
             // 
             this.status.AutoSize = true;
             this.status.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.status.Location = new System.Drawing.Point(382, 229);
+            this.status.Location = new System.Drawing.Point(184, 124);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(65, 18);
             this.status.TabIndex = 15;
             this.status.Text = "Statusz";
             // 
+            // panelBarang
+            // 
+            this.panelBarang.AutoScroll = true;
+            this.panelBarang.Location = new System.Drawing.Point(187, 155);
+            this.panelBarang.Name = "panelBarang";
+            this.panelBarang.Size = new System.Drawing.Size(656, 317);
+            this.panelBarang.TabIndex = 16;
+            // 
             // MenuUtama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 450);
+            this.ClientSize = new System.Drawing.Size(867, 493);
             this.Controls.Add(this.status);
+            this.Controls.Add(this.panelBarang);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelPencarian);
@@ -276,5 +286,6 @@ namespace TP1PBO2021
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Logo;
         private System.Windows.Forms.Label status;
+        private System.Windows.Forms.FlowLayoutPanel panelBarang;
     }
 }
