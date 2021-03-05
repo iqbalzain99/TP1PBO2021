@@ -15,6 +15,7 @@ namespace TP1PBO2021
         private string _nama;
         private int _harga;
         private string _jenisBarang;
+        private int _jumlahBarang;
 
         public string Nama 
         {
@@ -34,6 +35,11 @@ namespace TP1PBO2021
             set { this._jenisBarang = value; }
         }
 
+        public int JumlahBarang
+        {
+            get { return this._jumlahBarang; }
+            set { this._jumlahBarang = value; }
+        }
 
         public ItemBox()
         {
@@ -43,8 +49,8 @@ namespace TP1PBO2021
         
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            nama_Barang.Text = this._nama + this._jenisBarang;
-            harga.Text = this._harga.ToString();
+            nama_Barang.Text = this._nama + "Total : " + this._jumlahBarang.ToString();
+            harga.Text = "Rp. " + this._harga.ToString();
             /*Elektronik
             Baju
             Makanan*/
@@ -60,6 +66,11 @@ namespace TP1PBO2021
             {
                 pb1.BackColor = Color.Green;
             }
+        }
+
+        private void beliBtn_Click(object sender, EventArgs e)
+        {
+            this._jumlahBarang = 1+this._jumlahBarang;
         }
     }
 }

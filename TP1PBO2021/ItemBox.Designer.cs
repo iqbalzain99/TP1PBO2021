@@ -72,6 +72,7 @@ namespace TP1PBO2021
             this.beliBtn.TabIndex = 3;
             this.beliBtn.Text = "BELI";
             this.beliBtn.UseVisualStyleBackColor = true;
+            this.beliBtn.Click += new System.EventHandler(this.beliBtn_Click);
             // 
             // ItemBox
             // 

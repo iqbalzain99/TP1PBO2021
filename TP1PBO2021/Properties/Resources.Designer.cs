@@ -73,6 +73,26 @@ namespace TP1PBO2021.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Home_01_19760531 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Home-01_19760531", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_language_326663 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_language_326663", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_logo_brand_brands_logos_sketch_app_2993662 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_logo_brand_brands_logos_sketch_app_2993662", resourceCulture);

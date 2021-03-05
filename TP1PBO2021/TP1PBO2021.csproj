@@ -116,5 +116,11 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_logo_brand_brands_logos_sketch_app_2993662.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Home-01_19760531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_language_326663.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

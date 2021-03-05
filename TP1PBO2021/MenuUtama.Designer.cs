@@ -40,7 +40,7 @@ namespace TP1PBO2021
             this.panelHeader = new System.Windows.Forms.Panel();
             this.LogOutBtn = new System.Windows.Forms.Button();
             this.WebCatalogBt = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
             this.panelBarang = new System.Windows.Forms.FlowLayoutPanel();
@@ -156,12 +156,12 @@ namespace TP1PBO2021
             this.panelHeader.Controls.Add(this.LogOutBtn);
             this.panelHeader.Controls.Add(this.WebCatalogBt);
             this.panelHeader.Controls.Add(this.label5);
-            this.panelHeader.Controls.Add(this.button1);
+            this.panelHeader.Controls.Add(this.HomeBtn);
             this.panelHeader.Controls.Add(this.label4);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(150, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(717, 70);
+            this.panelHeader.Size = new System.Drawing.Size(750, 70);
             this.panelHeader.TabIndex = 10;
             // 
             // LogOutBtn
@@ -190,7 +190,7 @@ namespace TP1PBO2021
             this.WebCatalogBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WebCatalogBt.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WebCatalogBt.ForeColor = System.Drawing.Color.White;
-            this.WebCatalogBt.Image = global::TP1PBO2021.Properties.Resources.iconfinder_logout_account_exit_door_3005766;
+            this.WebCatalogBt.Image = global::TP1PBO2021.Properties.Resources.iconfinder_language_326663;
             this.WebCatalogBt.Location = new System.Drawing.Point(172, 0);
             this.WebCatalogBt.Name = "WebCatalogBt";
             this.WebCatalogBt.Size = new System.Drawing.Size(172, 70);
@@ -200,22 +200,23 @@ namespace TP1PBO2021
             this.WebCatalogBt.UseVisualStyleBackColor = false;
             this.WebCatalogBt.Click += new System.EventHandler(this.WebCatalogBt_Click);
             // 
-            // button1
+            // HomeBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::TP1PBO2021.Properties.Resources.iconfinder_logout_account_exit_door_3005766;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 70);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "HOME";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.HomeBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.HomeBtn.FlatAppearance.BorderSize = 0;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.White;
+            this.HomeBtn.Image = global::TP1PBO2021.Properties.Resources.iconfinder_Home_01_19760531;
+            this.HomeBtn.Location = new System.Drawing.Point(0, 0);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(172, 70);
+            this.HomeBtn.TabIndex = 11;
+            this.HomeBtn.Text = "HOME";
+            this.HomeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // label1
             // 
@@ -244,14 +245,14 @@ namespace TP1PBO2021
             this.panelBarang.AutoScroll = true;
             this.panelBarang.Location = new System.Drawing.Point(187, 155);
             this.panelBarang.Name = "panelBarang";
-            this.panelBarang.Size = new System.Drawing.Size(656, 317);
+            this.panelBarang.Size = new System.Drawing.Size(701, 317);
             this.panelBarang.TabIndex = 16;
             // 
             // MenuUtama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 493);
+            this.ClientSize = new System.Drawing.Size(900, 493);
             this.Controls.Add(this.status);
             this.Controls.Add(this.panelBarang);
             this.Controls.Add(this.label1);
@@ -280,7 +281,7 @@ namespace TP1PBO2021
         private System.Windows.Forms.Panel panelPencarian;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button LogOutBtn;
         private System.Windows.Forms.Button WebCatalogBt;
         private System.Windows.Forms.Label label1;
