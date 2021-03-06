@@ -49,28 +49,35 @@ namespace TP1PBO2021
         
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            nama_Barang.Text = this._nama + "Total : " + this._jumlahBarang.ToString();
+            nama_Barang.Text = this._nama;
             harga.Text = "Rp. " + this._harga.ToString();
+            totalHarga.Text = "Total : " + this._jumlahBarang.ToString();
             /*Elektronik
             Baju
             Makanan*/
             if (this._jenisBarang == "Elektronik")
             {
                 pb1.BackColor = Color.Red;
+                pb1.Image = TP1PBO2021.Properties.Resources.iconfinder_language_326663;
             }
             if (this._jenisBarang == "Baju")
             {
                 pb1.BackColor = Color.Blue;
+                pb1.Image = TP1PBO2021.Properties.Resources.iconfinder_logout_account_exit_door_3005766;
             }
             if (this._jenisBarang == "Makanan")
             {
                 pb1.BackColor = Color.Green;
+                pb1.Image = TP1PBO2021.Properties.Resources.iconfinder_logo_brand_brands_logos_sketch_app_2993662;
             }
         }
 
         private void beliBtn_Click(object sender, EventArgs e)
         {
             this._jumlahBarang = 1+this._jumlahBarang;
+            UserControl1_Load(sender, e);
         }
+
+        
     }
 }

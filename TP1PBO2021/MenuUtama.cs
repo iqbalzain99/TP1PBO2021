@@ -129,10 +129,20 @@ namespace TP1PBO2021
         private void WebCatalogBt_Click(object sender, EventArgs e)
         {
             //System.Diagnostics.Process.Start("tokopedia.com");
+            System.Diagnostics.Process.Start("http://www.tokopedia.com");
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            tampilIsiData();
+        }
+
+        private void chartBtn_Click(object sender, EventArgs e)
+        {
+            DetailPage detil = new DetailPage(items);
+            this.Hide();
+            detil.ShowDialog();
+            this.Show();
             tampilIsiData();
         }
     }

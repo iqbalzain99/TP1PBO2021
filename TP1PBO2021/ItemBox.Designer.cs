@@ -33,6 +33,7 @@ namespace TP1PBO2021
             this.nama_Barang = new System.Windows.Forms.Label();
             this.harga = new System.Windows.Forms.Label();
             this.beliBtn = new System.Windows.Forms.Button();
+            this.totalHarga = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@ namespace TP1PBO2021
             // beliBtn
             // 
             this.beliBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliBtn.Location = new System.Drawing.Point(50, 197);
+            this.beliBtn.Location = new System.Drawing.Point(50, 212);
             this.beliBtn.Name = "beliBtn";
             this.beliBtn.Size = new System.Drawing.Size(75, 23);
             this.beliBtn.TabIndex = 3;
@@ -74,10 +75,20 @@ namespace TP1PBO2021
             this.beliBtn.UseVisualStyleBackColor = true;
             this.beliBtn.Click += new System.EventHandler(this.beliBtn_Click);
             // 
+            // totalHarga
+            // 
+            this.totalHarga.AutoSize = true;
+            this.totalHarga.Location = new System.Drawing.Point(47, 194);
+            this.totalHarga.Name = "totalHarga";
+            this.totalHarga.Size = new System.Drawing.Size(52, 17);
+            this.totalHarga.TabIndex = 4;
+            this.totalHarga.Text = "Total : ";
+            // 
             // ItemBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.totalHarga);
             this.Controls.Add(this.beliBtn);
             this.Controls.Add(this.harga);
             this.Controls.Add(this.nama_Barang);
@@ -97,5 +108,6 @@ namespace TP1PBO2021
         private System.Windows.Forms.Label nama_Barang;
         private System.Windows.Forms.Label harga;
         private System.Windows.Forms.Button beliBtn;
+        private System.Windows.Forms.Label totalHarga;
     }
 }
